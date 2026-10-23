@@ -1,0 +1,12 @@
+{
+  "name": "haydi-namaza-pwa",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check app.js && node --check extras.js && node --check sw.js && node --check netlify/functions/push-subscribe.mjs && node --check netlify/functions/push-cron.mjs && node --check netlify/functions/push-config.mjs"
+  },
+  "dependencies": {
+    "web-push": "^3.6.7"
+  }
+}
